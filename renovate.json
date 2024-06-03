@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "customManagers:dockerfileVersions"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchPackageNames": [
+        "openresty/lua-nginx-module"
+      ]
+    },
+    {
+      "matchDatasources": [
+        "pypi"
+      ],
+      "matchPackageNames": [
+        "lua-nginx-module"
+      ]
+    }
+  ]
+}
